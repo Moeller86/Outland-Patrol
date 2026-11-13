@@ -1,0 +1,170 @@
+{
+  "_note": "Byggegrunde, man kan købe, og de moduler, man kan bygge på dem. Basen er fælles for hele gruppen i co-op. Udvinding producerer kun, mens I spiller.",
+  "base_hp": 300,
+  "storage_base": 10,
+  "production_interval": 30,
+  "raid_interval": [
+    360,
+    600
+  ],
+  "raid_first": 240,
+  "plots": [
+    {
+      "id": "plot_viridia",
+      "kind": "ground",
+      "planet": "viridia",
+      "dist": 860,
+      "bearing": 320,
+      "name": "Byggegrund ved Junglefloden",
+      "resource": "frugt",
+      "price": 900
+    },
+    {
+      "id": "plot_sahra",
+      "kind": "ground",
+      "planet": "sahra",
+      "dist": 360,
+      "bearing": 20,
+      "name": "Byggegrund i Rustdalen",
+      "resource": "malm",
+      "price": 900
+    },
+    {
+      "id": "plot_ignis",
+      "kind": "ground",
+      "planet": "ignis",
+      "dist": 600,
+      "bearing": 330,
+      "name": "Byggegrund på Askeplateauet",
+      "resource": "braendstof",
+      "price": 950
+    },
+    {
+      "id": "plot_frosta",
+      "kind": "ground",
+      "planet": "frosta",
+      "dist": 760,
+      "bearing": 40,
+      "name": "Byggegrund ved Isfjeldet",
+      "resource": "krystal",
+      "price": 1100
+    },
+    {
+      "id": "plot_lumina",
+      "kind": "ground",
+      "planet": "lumina",
+      "dist": 330,
+      "bearing": 330,
+      "name": "Byggegrund i Glødeskoven",
+      "resource": "frugt",
+      "price": 900
+    },
+    {
+      "id": "plot_kepler_orbit",
+      "kind": "space",
+      "system": "kepler",
+      "pos": [
+        380,
+        90,
+        -760
+      ],
+      "name": "Orbitalplads ved Kepler-bæltet",
+      "resource": "malm",
+      "price": 1400
+    },
+    {
+      "id": "plot_frosta_orbit",
+      "kind": "space",
+      "system": "frosta",
+      "pos": [
+        -260,
+        90,
+        -780
+      ],
+      "name": "Orbitalplads ved Krystalbæltet",
+      "resource": "krystal",
+      "price": 1600
+    },
+    {
+      "id": "plot_thalassa",
+      "kind": "ground",
+      "planet": "thalassa",
+      "dist": 380,
+      "bearing": 40,
+      "name": "Byggegrund på Koraløen",
+      "resource": "frugt",
+      "price": 1000
+    },
+    {
+      "id": "plot_ravne_orbit",
+      "kind": "space",
+      "system": "ravne",
+      "pos": [
+        -300,
+        100,
+        300
+      ],
+      "name": "Orbitalplads i Ravnebæltet",
+      "resource": "krystal",
+      "price": 1200
+    }
+  ],
+  "modules": [
+    {
+      "id": "udvinding",
+      "name": "Udvinding",
+      "max": 3,
+      "price": 400,
+      "price_step": 250,
+      "goods": {
+        "malm": 3
+      },
+      "desc": "Henter stedets råstof op. +2 enheder i minuttet pr. niveau, mens I spiller."
+    },
+    {
+      "id": "lager",
+      "name": "Lager",
+      "max": 2,
+      "price": 250,
+      "price_step": 200,
+      "goods": {
+        "malm": 2
+      },
+      "desc": "Plads til 20 enheder mere på lageret."
+    },
+    {
+      "id": "taarn",
+      "name": "Forsvarstårn",
+      "max": 4,
+      "price": 350,
+      "price_step": 0,
+      "goods": {
+        "elektronik": 2,
+        "malm": 2
+      },
+      "desc": "Skyder på pirater, der kommer for tæt på basen."
+    },
+    {
+      "id": "skjold",
+      "name": "Skjoldgenerator",
+      "max": 1,
+      "price": 500,
+      "price_step": 0,
+      "goods": {
+        "krystal": 2
+      },
+      "desc": "+200 modstand og selvreparation, når der ikke er kamp."
+    },
+    {
+      "id": "hangar",
+      "name": "Hangar og værksted",
+      "max": 1,
+      "price": 450,
+      "price_step": 0,
+      "goods": {
+        "elektronik": 3
+      },
+      "desc": "Gratis reparation af skibe og påfyldning af missiler (15 cr stk.)."
+    }
+  ]
+}

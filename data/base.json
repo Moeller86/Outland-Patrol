@@ -1,0 +1,51 @@
+{
+  "id": "concord_base",
+  "name": "Bastion Kepler",
+  "modules": [
+    {
+      "id": "hangar",
+      "name": "Hangar",
+      "missions": 0,
+      "desc": "Start og bjærgning, missionstavle og debriefing."
+    },
+    {
+      "id": "repair",
+      "name": "Reparationsdok",
+      "missions": 0,
+      "desc": "Reparation af skroget."
+    },
+    {
+      "id": "armory",
+      "name": "Våbenlager",
+      "missions": 2,
+      "upgrade": "laser",
+      "desc": "Laser Mk II kan købes på basen."
+    },
+    {
+      "id": "shipyard",
+      "name": "Værft",
+      "missions": 3,
+      "desc": "Værft: køb og skift mellem skibstyper (Falk, Hveps, Bison, Albatros)."
+    },
+    {
+      "id": "shield_gen",
+      "name": "Skjoldgenerator",
+      "missions": 4,
+      "upgrade": "shield",
+      "desc": "Skjold Mk II kan købes på basen, og basen får et skjold."
+    },
+    {
+      "id": "cargo_bay",
+      "name": "Lastbugt",
+      "missions": 6,
+      "upgrade": "cargo",
+      "desc": "Lastmoduler kan købes på basen."
+    },
+    {
+      "id": "turrets",
+      "name": "Forsvarstårne",
+      "missions": 8,
+      "desc": "Fire tårne skyder på pirater, der kommer for tæt på basen."
+    }
+  ]
+}

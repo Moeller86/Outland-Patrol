@@ -1,0 +1,517 @@
+{
+  "_note": "Skibsklasser. turn/roll i radianer pr. sekund, agility = hvor direkte skibet reagerer, accel = hvor hurtigt farten følger gashåndtaget. armor ganges på al skade (lavere = mere robust). guns = kanonernes placering (x, y, z). Alle kan vælges som startskib; resten kan købes på et værft. gimbal = hvor mange grader kanonerne kan dreje mod musemarkøren. scan_mult = hvor hurtigt scanneren lader op (lavere er hurtigere), scan_range = scannerens rækkevidde (ganges på). start = skibe, man kan vælge som startskib; resten købes på et værft.",
+  "default": "falk",
+  "order": [
+    "falk",
+    "hveps",
+    "bison",
+    "albatros",
+    "glente",
+    "hugorm",
+    "ravn",
+    "spejder",
+    "fragter",
+    "opmaaler",
+    "fregat",
+    "krydser"
+  ],
+  "classes": {
+    "falk": {
+      "name": "Falk-patruljejager",
+      "role": "Alsidig",
+      "desc": "Concord Patrols standardjager. God til lidt af det hele.",
+      "price": 600,
+      "turn": 2.88,
+      "roll": 3.36,
+      "agility": 9.5,
+      "accel": 2.2,
+      "max_speed": 60,
+      "boost": 70,
+      "strafe": 16,
+      "shield": 50,
+      "armor": 1.0,
+      "cargo_bonus": 0,
+      "missiles": 8,
+      "fire_cooldown": 0.16,
+      "damage": 1.0,
+      "guns": [
+        [
+          2.2,
+          0,
+          -1.2
+        ],
+        [
+          -2.2,
+          0,
+          -1.2
+        ]
+      ],
+      "gimbal": 20,
+      "slots": {
+        "vaaben": 2,
+        "gadget": 2
+      }
+    },
+    "hveps": {
+      "name": "Hveps-interceptor",
+      "role": "Hurtig og adræt",
+      "desc": "Lynhurtig og skarp i svingene, med en hurtigskydende kanon. Tåler ikke meget.",
+      "price": 1200,
+      "turn": 3.75,
+      "roll": 4.32,
+      "agility": 13.5,
+      "accel": 3.0,
+      "max_speed": 72,
+      "boost": 85,
+      "strafe": 22,
+      "shield": 40,
+      "armor": 1.35,
+      "cargo_bonus": -4,
+      "missiles": 6,
+      "fire_cooldown": 0.11,
+      "damage": 1.0,
+      "guns": [
+        [
+          0.9,
+          -0.2,
+          -3.0
+        ],
+        [
+          -0.9,
+          -0.2,
+          -3.0
+        ]
+      ],
+      "gimbal": 14,
+      "slots": {
+        "vaaben": 2,
+        "gadget": 1
+      }
+    },
+    "bison": {
+      "name": "Bison-kanonbåd",
+      "role": "Tung og robust",
+      "desc": "Pansret kanonbåd med fire kanoner og plads til 12 missiler. Langsom, men svær at skyde ned.",
+      "price": 1600,
+      "turn": 2.0,
+      "roll": 2.4,
+      "agility": 6.1,
+      "accel": 1.5,
+      "max_speed": 48,
+      "boost": 55,
+      "strafe": 10,
+      "shield": 80,
+      "armor": 0.6,
+      "cargo_bonus": 4,
+      "missiles": 12,
+      "fire_cooldown": 0.22,
+      "damage": 1.0,
+      "guns": [
+        [
+          3.0,
+          0.2,
+          -1.5
+        ],
+        [
+          -3.0,
+          0.2,
+          -1.5
+        ],
+        [
+          1.6,
+          -0.9,
+          -2.5
+        ],
+        [
+          -1.6,
+          -0.9,
+          -2.5
+        ]
+      ],
+      "gimbal": 26,
+      "slots": {
+        "vaaben": 3,
+        "gadget": 3
+      }
+    },
+    "albatros": {
+      "name": "Albatros-fragter",
+      "role": "Handel og fragt",
+      "desc": "Bevæbnet fragtskib med dobbelt så stort lastrum. Til handlende og basebyggere.",
+      "price": 1400,
+      "turn": 2.25,
+      "roll": 2.64,
+      "agility": 6.8,
+      "accel": 1.7,
+      "max_speed": 54,
+      "boost": 62,
+      "strafe": 12,
+      "shield": 60,
+      "armor": 0.85,
+      "cargo_bonus": 12,
+      "missiles": 4,
+      "fire_cooldown": 0.2,
+      "damage": 1.0,
+      "guns": [
+        [
+          1.8,
+          0.6,
+          -4.0
+        ],
+        [
+          -1.8,
+          0.6,
+          -4.0
+        ]
+      ],
+      "gimbal": 18,
+      "slots": {
+        "vaaben": 1,
+        "gadget": 3
+      }
+    },
+    "glente": {
+      "name": "Glente-angrebsjager",
+      "role": "Slagkraftig",
+      "desc": "Bred deltavinge med fire kanoner. Rammer hårdt og tåler en del – men den er ikke den mest adrætte.",
+      "price": 1800,
+      "turn": 2.6,
+      "roll": 3.2,
+      "agility": 9.0,
+      "accel": 2.0,
+      "max_speed": 62,
+      "boost": 72,
+      "strafe": 15,
+      "shield": 60,
+      "armor": 0.9,
+      "cargo_bonus": 0,
+      "missiles": 10,
+      "fire_cooldown": 0.14,
+      "damage": 1.15,
+      "guns": [
+        [
+          3.4,
+          -0.1,
+          -1.0
+        ],
+        [
+          -3.4,
+          -0.1,
+          -1.0
+        ],
+        [
+          1.3,
+          -0.5,
+          -2.6
+        ],
+        [
+          -1.3,
+          -0.5,
+          -2.6
+        ]
+      ],
+      "gimbal": 18,
+      "slots": {
+        "vaaben": 3,
+        "gadget": 2
+      }
+    },
+    "hugorm": {
+      "name": "Hugorm-interceptor",
+      "role": "Ekstrem fart",
+      "desc": "Fremadbøjede vinger og en kæmpe motor. Den hurtigste jager i Concord – og den mest skrøbelige.",
+      "price": 1500,
+      "turn": 4.1,
+      "roll": 4.6,
+      "agility": 14.5,
+      "accel": 3.4,
+      "max_speed": 80,
+      "boost": 95,
+      "strafe": 24,
+      "shield": 30,
+      "armor": 1.5,
+      "cargo_bonus": -6,
+      "missiles": 4,
+      "fire_cooldown": 0.1,
+      "damage": 0.9,
+      "guns": [
+        [
+          0.9,
+          -0.2,
+          -3.0
+        ],
+        [
+          -0.9,
+          -0.2,
+          -3.0
+        ]
+      ],
+      "gimbal": 12,
+      "slots": {
+        "vaaben": 2,
+        "gadget": 1
+      }
+    },
+    "ravn": {
+      "name": "Ravn-dusørjæger",
+      "role": "Tung jæger med lastrum",
+      "desc": "En kantet, tungt bevæbnet jæger med to store sidemotorer og plads til last. Foretrukket af dusørjægere i Ravne.",
+      "price": 2600,
+      "turn": 2.1,
+      "roll": 2.5,
+      "agility": 6.8,
+      "accel": 1.8,
+      "max_speed": 56,
+      "boost": 68,
+      "strafe": 12,
+      "shield": 90,
+      "armor": 0.7,
+      "cargo_bonus": 8,
+      "missiles": 12,
+      "fire_cooldown": 0.18,
+      "damage": 1.2,
+      "guns": [
+        [
+          2.6,
+          -0.4,
+          -3.2
+        ],
+        [
+          -2.6,
+          -0.4,
+          -3.2
+        ],
+        [
+          0.8,
+          -1.0,
+          -4.0
+        ],
+        [
+          -0.8,
+          -1.0,
+          -4.0
+        ]
+      ],
+      "gimbal": 30,
+      "slots": {
+        "vaaben": 3,
+        "gadget": 2
+      }
+    },
+    "spejder": {
+      "name": "Frontier-spejder",
+      "role": "Spejder (Outland Frontier)",
+      "desc": "Det lille spejderskib fra grænsen. Hurtigt, billigt og med en scanner, der lader dobbelt så hurtigt op.",
+      "price": 500,
+      "turn": 3.6,
+      "roll": 4.0,
+      "agility": 12.0,
+      "accel": 2.9,
+      "max_speed": 76,
+      "boost": 92,
+      "strafe": 20,
+      "shield": 35,
+      "armor": 1.3,
+      "cargo_bonus": -4,
+      "missiles": 2,
+      "fire_cooldown": 0.16,
+      "damage": 0.8,
+      "guns": [
+        [
+          0.0,
+          -0.4,
+          -2.4
+        ]
+      ],
+      "gimbal": 16,
+      "scan_mult": 0.5,
+      "slots": {
+        "vaaben": 1,
+        "gadget": 2
+      }
+    },
+    "fragter": {
+      "name": "Frontier-fragtskib",
+      "role": "Fragt (Outland Frontier)",
+      "desc": "Grænsens arbejdshest: langsomt, men med et enormt lastrum.",
+      "price": 1900,
+      "turn": 1.8,
+      "roll": 2.1,
+      "agility": 5.5,
+      "accel": 1.4,
+      "max_speed": 50,
+      "boost": 58,
+      "strafe": 9,
+      "shield": 70,
+      "armor": 0.8,
+      "cargo_bonus": 24,
+      "missiles": 2,
+      "fire_cooldown": 0.24,
+      "damage": 0.9,
+      "guns": [
+        [
+          1.6,
+          0.8,
+          -4.6
+        ],
+        [
+          -1.6,
+          0.8,
+          -4.6
+        ]
+      ],
+      "gimbal": 20,
+      "slots": {
+        "vaaben": 1,
+        "gadget": 3
+      }
+    },
+    "opmaaler": {
+      "name": "Opmålingsskib",
+      "role": "Udforskning (Outland Frontier)",
+      "desc": "Bygget til at kortlægge nye systemer. Scanneren rækker langt og lader hurtigt op – perfekt til at finde vrag og fund.",
+      "price": 1700,
+      "turn": 2.4,
+      "roll": 2.8,
+      "agility": 7.0,
+      "accel": 1.9,
+      "max_speed": 58,
+      "boost": 70,
+      "strafe": 12,
+      "shield": 60,
+      "armor": 0.95,
+      "cargo_bonus": 6,
+      "missiles": 4,
+      "fire_cooldown": 0.2,
+      "damage": 0.9,
+      "guns": [
+        [
+          1.2,
+          -0.4,
+          -3.0
+        ],
+        [
+          -1.2,
+          -0.4,
+          -3.0
+        ]
+      ],
+      "gimbal": 20,
+      "scan_mult": 0.4,
+      "scan_range": 1.6,
+      "slots": {
+        "vaaben": 2,
+        "gadget": 3
+      }
+    },
+    "fregat": {
+      "name": "Fregat",
+      "role": "Krigsskib (Outland Frontier)",
+      "desc": "Et lille krigsskib med fire kanoner, tykt panser og et stort missilmagasin.",
+      "price": 3200,
+      "turn": 1.6,
+      "roll": 1.9,
+      "agility": 5.0,
+      "accel": 1.3,
+      "max_speed": 46,
+      "boost": 54,
+      "strafe": 8,
+      "shield": 120,
+      "armor": 0.55,
+      "cargo_bonus": 8,
+      "missiles": 16,
+      "fire_cooldown": 0.2,
+      "damage": 1.25,
+      "guns": [
+        [
+          2.4,
+          0.9,
+          -4.0
+        ],
+        [
+          -2.4,
+          0.9,
+          -4.0
+        ],
+        [
+          3.2,
+          -0.6,
+          -1.0
+        ],
+        [
+          -3.2,
+          -0.6,
+          -1.0
+        ]
+      ],
+      "gimbal": 32,
+      "slots": {
+        "vaaben": 4,
+        "gadget": 3
+      }
+    },
+    "krydser": {
+      "name": "Krydser",
+      "role": "Tungt krigsskib (Outland Frontier)",
+      "desc": "Concords tunge krydser. Seks kanontårne og et skjold, der kan tage et helt piratangreb. Langsom som en planet.",
+      "price": 5200,
+      "turn": 1.2,
+      "roll": 1.5,
+      "agility": 4.0,
+      "accel": 1.0,
+      "max_speed": 42,
+      "boost": 50,
+      "strafe": 6,
+      "shield": 180,
+      "armor": 0.45,
+      "cargo_bonus": 14,
+      "missiles": 24,
+      "fire_cooldown": 0.22,
+      "damage": 1.4,
+      "guns": [
+        [
+          3.0,
+          1.4,
+          -6.0
+        ],
+        [
+          -3.0,
+          1.4,
+          -6.0
+        ],
+        [
+          4.2,
+          0.0,
+          -2.0
+        ],
+        [
+          -4.2,
+          0.0,
+          -2.0
+        ],
+        [
+          2.0,
+          -1.4,
+          -7.0
+        ],
+        [
+          -2.0,
+          -1.4,
+          -7.0
+        ]
+      ],
+      "gimbal": 40,
+      "slots": {
+        "vaaben": 5,
+        "gadget": 4
+      }
+    }
+  },
+  "start": [
+    "falk",
+    "hveps",
+    "bison",
+    "albatros",
+    "spejder"
+  ]
+}

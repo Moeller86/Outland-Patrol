@@ -1,0 +1,31 @@
+; Outland Patrol – Godot 4-projekt
+
+config_version=5
+
+[application]
+
+config/name="Outland Patrol"
+config/description="Concord Patrol i the Reach: korte co-op-missioner i farverig retro 3D."
+run/main_scene="res://scenes/main.tscn"
+config/features=PackedStringArray("4.4", "Forward Plus")
+config/icon="res://icon.svg"
+
+[autoload]
+
+Game="*res://scripts/autoload/game.gd"
+Net="*res://scripts/autoload/net.gd"
+Sfx="*res://scripts/autoload/sfx.gd"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+anti_aliasing/quality/msaa_3d=0
+
+[physics]
+
+common/physics_interpolation=true

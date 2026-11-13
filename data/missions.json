@@ -1,0 +1,228 @@
+{
+  "ranks": [
+    {
+      "name": "Kadet",
+      "xp": 0
+    },
+    {
+      "name": "Pilot",
+      "xp": 100
+    },
+    {
+      "name": "Løjtnant",
+      "xp": 300
+    },
+    {
+      "name": "Kaptajn",
+      "xp": 700
+    },
+    {
+      "name": "Kommandør",
+      "xp": 1500
+    }
+  ],
+  "templates": [
+    {
+      "id": "distress",
+      "type": "distress",
+      "name": "Nødkald",
+      "difficulty": "Let",
+      "min_rank": 0,
+      "system": "kepler",
+      "from": "kepler_station",
+      "to": "viridia",
+      "pirates": 3,
+      "ambush": 2,
+      "time": 90,
+      "reward": 180,
+      "xp": 60,
+      "brief": "Fragtskibet {ship} melder om piratangreb på ruten til {to}. Nå frem, før det er for sent, slå angriberne ned, og eskortér det sikkert til landingspladsen."
+    },
+    {
+      "id": "sweep_kepler",
+      "type": "sweep",
+      "name": "Patruljesweep",
+      "difficulty": "Let",
+      "min_rank": 0,
+      "system": "kepler",
+      "return": "concord_base",
+      "points": 3,
+      "pirates": 2,
+      "reward": 150,
+      "xp": 50,
+      "brief": "Flyv patruljeruten gennem {system}, tjek de tre navigationsbøjer, og ryd pirater ved hver af dem. Meld tilbage ved {return}."
+    },
+    {
+      "id": "distress_hard",
+      "type": "distress",
+      "name": "Nødkald: Bagholdet",
+      "difficulty": "Svær",
+      "min_rank": 2,
+      "system": "kepler",
+      "from": "kepler_station",
+      "to": "viridia",
+      "pirates": 4,
+      "ambush": 3,
+      "time": 75,
+      "reward": 320,
+      "xp": 110,
+      "brief": "En konvojleder, {ship}, er faldet i et baghold. Piraterne er flere og bedre organiseret. Hent fragtskibet ud og eskortér det til {to}."
+    },
+    {
+      "id": "sweep_frosta",
+      "type": "sweep",
+      "name": "Patruljesweep: Frosta",
+      "difficulty": "Middel",
+      "min_rank": 1,
+      "system": "frosta",
+      "return": "frosta",
+      "points": 3,
+      "pirates": 3,
+      "reward": 240,
+      "xp": 80,
+      "brief": "Nordforbundet beder om hjælp. Patruljér {system}, ryd piraterne ved navigationsbøjerne, og land ved {return} bagefter."
+    },
+    {
+      "id": "search_sahra",
+      "type": "search",
+      "name": "Eftersøgning: Sahra",
+      "difficulty": "Let",
+      "min_rank": 0,
+      "system": "kepler",
+      "to": "sahra",
+      "return": "concord_base",
+      "pirates": 2,
+      "ambush": 2,
+      "reward": 220,
+      "xp": 70,
+      "brief": "Fragtskibet {ship} styrtede ned på {to}. Flyv derhen, find vraget med scanneren (C), land og bjærg den sorte boks, og bring den hjem til {return}."
+    },
+    {
+      "id": "search_lumina",
+      "type": "search",
+      "name": "Eftersøgning: Lumina",
+      "difficulty": "Middel",
+      "min_rank": 1,
+      "system": "frosta",
+      "to": "lumina",
+      "return": "frosta",
+      "pirates": 3,
+      "ambush": 3,
+      "reward": 300,
+      "xp": 90,
+      "brief": "Nordforbundet har mistet kontakten med {ship} over {to}. Find vraget med scanneren (C), bjærg den sorte boks, før piraterne gør det, og land med den på {return}."
+    },
+    {
+      "id": "distress_solhavn",
+      "type": "distress",
+      "name": "Nødkald: Solhavn",
+      "difficulty": "Middel",
+      "min_rank": 1,
+      "system": "solhavn",
+      "from": "solhavn_station",
+      "to": "thalassa",
+      "pirates": 3,
+      "ambush": 2,
+      "time": 90,
+      "reward": 260,
+      "xp": 80,
+      "brief": "Fragtskibet {ship} er under angreb på vej til {to}. Nå frem, slå piraterne ned, og eskortér det til landing."
+    },
+    {
+      "id": "sweep_solhavn",
+      "type": "sweep",
+      "name": "Patruljesweep: Solhavn",
+      "difficulty": "Middel",
+      "min_rank": 1,
+      "system": "solhavn",
+      "return": "solhavn_station",
+      "points": 3,
+      "pirates": 3,
+      "reward": 250,
+      "xp": 80,
+      "brief": "Handelsforbundet betaler Concord for at holde {system} sikkert. Tjek bøjerne, ryd piraterne, og meld tilbage ved {return}."
+    },
+    {
+      "id": "search_thalassa",
+      "type": "search",
+      "name": "Eftersøgning: Thalassa",
+      "difficulty": "Middel",
+      "min_rank": 1,
+      "system": "solhavn",
+      "to": "thalassa",
+      "return": "aurum",
+      "pirates": 3,
+      "ambush": 2,
+      "reward": 300,
+      "xp": 90,
+      "brief": "{ship} styrtede ned i tordenvejret over {to}. Find vraget med scanneren (C), og bring den sorte boks til {return}."
+    },
+    {
+      "id": "search_obelisk",
+      "type": "search",
+      "name": "Eftersøgning: Obelisk",
+      "difficulty": "Svær",
+      "min_rank": 2,
+      "system": "ekko",
+      "to": "obelisk",
+      "return": "obelisk",
+      "pirates": 3,
+      "ambush": 3,
+      "reward": 380,
+      "xp": 120,
+      "brief": "Forskningsskibet {ship} forsvandt over {to}. Find vraget blandt ruinerne, og land med den sorte boks på {return}."
+    },
+    {
+      "id": "sweep_ravne",
+      "type": "sweep",
+      "name": "Razzia i Ravnebæltet",
+      "difficulty": "Meget svær",
+      "min_rank": 3,
+      "system": "ravne",
+      "return": "korvus",
+      "points": 3,
+      "pirates": 4,
+      "reward": 480,
+      "xp": 150,
+      "brief": "Concord sender en razzia ind i {system}. Tjek bøjerne, ryd piratrederne, og land på {return} – hvis du tør."
+    },
+    {
+      "id": "assault_frosta",
+      "type": "assault",
+      "name": "Angreb: Isfæstningen",
+      "difficulty": "Middel",
+      "min_rank": 0,
+      "system": "frosta",
+      "to": "frosta",
+      "defenders": 2,
+      "time": 300,
+      "reward": 420,
+      "xp": 140,
+      "brief": "Pirater har bygget en fæstning nede i den store kløft på {to}. Concord har lastet bomber om bord på dit skib. Flyv lavt ind gennem kløften under luftskytset, bomb de tre kontroltårne, så reaktorens skjold falder, og bomb reaktoren for enden. Kom så væk, før den går kritisk!"
+    },
+    {
+      "id": "assault_korvus",
+      "type": "assault",
+      "name": "Angreb: Ravnekløften",
+      "difficulty": "Svær",
+      "min_rank": 1,
+      "system": "ravne",
+      "to": "korvus",
+      "defenders": 3,
+      "time": 260,
+      "reward": 650,
+      "xp": 220,
+      "brief": "Ravnekløften på {to} er piraternes største base i Ravne. Luftskyts på begge kanter, broer over kløften og jagere i luften. Hold dig nede i kløften, bomb kontroltårnene og reaktoren, og flyv ud, før det hele springer."
+    }
+  ],
+  "freighter_names": [
+    "Ilsa Varn",
+    "Maren-7",
+    "Gyldne Høst",
+    "Tovs Pram",
+    "Nordlys Kurer",
+    "Kepler Ekspres",
+    "Sølvmåge",
+    "Brix & Søn"
+  ]
+}

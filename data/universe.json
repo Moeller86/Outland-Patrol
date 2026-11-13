@@ -1,0 +1,2444 @@
+{
+  "goods": {
+    "malm": {
+      "name": "Malm",
+      "color": "ffe14d"
+    },
+    "frugt": {
+      "name": "Frugt",
+      "color": "6bdc4f"
+    },
+    "elektronik": {
+      "name": "Elektronik",
+      "color": "4dd0ff"
+    },
+    "braendstof": {
+      "name": "Brændstof",
+      "color": "ff9e3d"
+    },
+    "krystal": {
+      "name": "Krystal",
+      "color": "c77dff"
+    },
+    "vragdel": {
+      "name": "Vragdele",
+      "color": "9aa0b8"
+    }
+  },
+  "systems": {
+    "kepler": {
+      "name": "Kepler Rand",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "space": "140b33",
+      "sun": "ffd36b",
+      "sun_dir": [
+        -0.7,
+        0.35,
+        0.25
+      ],
+      "nebula": [
+        "ff4fa3",
+        "7b4dff",
+        "2ec4d6"
+      ],
+      "spawn": [
+        0,
+        0,
+        0
+      ],
+      "planets": [
+        {
+          "id": "viridia",
+          "name": "Viridia",
+          "pos": [
+            0,
+            -640,
+            -5600
+          ],
+          "radius": 1800,
+          "amp": 1.0,
+          "seed": 31,
+          "pad_dir": [
+            0.22,
+            0.48,
+            0.85
+          ],
+          "pad_h": 18,
+          "sky": "7fdcff",
+          "atmo": "7fe7ff",
+          "cloud": "ffffff",
+          "buildings": [
+            "ff7a59",
+            "4dd0ff",
+            "6bdc4f"
+          ],
+          "biome": [
+            [
+              -20,
+              "1b6fd1"
+            ],
+            [
+              0,
+              "2ed3d6"
+            ],
+            [
+              4,
+              "ffd97a"
+            ],
+            [
+              30,
+              "6bdc4f"
+            ],
+            [
+              52,
+              "2fa04f"
+            ],
+            [
+              70,
+              "a77be0"
+            ],
+            [
+              100000,
+              "fdf6ff"
+            ]
+          ],
+          "title": "VIRIDIA · LANDINGSPLADS 1",
+          "sub": "Jungleverden · Handelsforbundet",
+          "market": {
+            "frugt": {
+              "mode": "sell",
+              "base": 12
+            },
+            "malm": {
+              "mode": "buy",
+              "base": 45
+            },
+            "elektronik": {
+              "mode": "buy",
+              "base": 72
+            },
+            "braendstof": {
+              "mode": "buy",
+              "base": 26
+            },
+            "krystal": {
+              "mode": "buy",
+              "base": 95
+            }
+          },
+          "upgrades": [
+            "repair",
+            "laser",
+            "thrusters"
+          ],
+          "rumors": [
+            "Købmand Olo: “Kepler Station betaler godt for vores frugt. Tag trade lanen, den er hurtigst.”",
+            "Mekaniker Brix: “Elektronik er dyrt her. Stationen sælger det billigt.”",
+            "Bartender Kiki: “Nogen har set et vrag med fremmed teknologi i asteroidebæltet.”"
+          ],
+          "decor": "tree",
+          "flora": {
+            "tree": [
+              "2fa04f",
+              "3fae6a",
+              "6bdc4f",
+              "1f7a3f"
+            ],
+            "band": [
+              4,
+              54
+            ],
+            "size": [
+              5,
+              13
+            ],
+            "width": 0.35,
+            "density": 0.09,
+            "rocks": 0.025,
+            "rock": [
+              "a77be0",
+              "8a6bbf",
+              "c9b8e8"
+            ]
+          },
+          "noise_offset": [
+            3.1,
+            1.7,
+            7.3
+          ],
+          "weather": {
+            "type": "lightning"
+          },
+          "outposts": [
+            {
+              "id": "viridia_farm",
+              "name": "Grønhavn",
+              "kind": "farm",
+              "dist": 660,
+              "bearing": 70,
+              "pad_h": 14,
+              "title": "GRØNHAVN · LANDBRUGSKOLONI",
+              "sub": "Drivhuse og frugtplantager",
+              "market": {
+                "frugt": {
+                  "mode": "sell",
+                  "base": 9
+                },
+                "braendstof": {
+                  "mode": "buy",
+                  "base": 30
+                },
+                "elektronik": {
+                  "mode": "buy",
+                  "base": 70
+                }
+              },
+              "upgrades": [
+                "repair"
+              ],
+              "rumors": [
+                "Drivhusene her forsyner halvdelen af Kepler Rand med frugt.",
+                "Bønderne klager over, at piraterne stjæler fra fragtskibene, før de når stationen."
+              ]
+            },
+            {
+              "id": "viridia_lab",
+              "name": "Kronetag-laboratoriet",
+              "kind": "research",
+              "dist": 720,
+              "bearing": 210,
+              "pad_h": 22,
+              "title": "KRONETAG-LABORATORIET",
+              "sub": "Forskningsstation · Concord Videnskab",
+              "market": {
+                "krystal": {
+                  "mode": "buy",
+                  "base": 105
+                },
+                "elektronik": {
+                  "mode": "sell",
+                  "base": 58
+                }
+              },
+              "upgrades": [
+                "repair",
+                "thrusters"
+              ],
+              "rumors": [
+                "Forskerne betaler godt for krystaller fra Frosta.",
+                "Nogen har set lysende tegn i junglen om natten – præcis som i Architect-ruinerne."
+              ]
+            }
+          ],
+          "features": [
+            {
+              "type": "canyon",
+              "dist": 1500,
+              "bearing": 60,
+              "heading": 30,
+              "length": 1800,
+              "width": 90,
+              "depth": 120
+            },
+            {
+              "type": "mesa",
+              "dist": 1150,
+              "bearing": 200,
+              "size": 200,
+              "height": 120,
+              "fall": 90
+            },
+            {
+              "type": "mesa",
+              "dist": 2100,
+              "bearing": 300,
+              "size": 160,
+              "height": 90,
+              "fall": 270
+            },
+            {
+              "type": "cave",
+              "dist": 1000,
+              "bearing": 140,
+              "heading": 40
+            }
+          ]
+        },
+        {
+          "id": "sahra",
+          "name": "Sahra",
+          "pos": [
+            -4800,
+            960,
+            -2880
+          ],
+          "radius": 380,
+          "amp": 0.7,
+          "seed": 217,
+          "pad_h": 16,
+          "sky": "ffd9a8",
+          "atmo": "ffd59e",
+          "cloud": "fff3dd",
+          "buildings": [
+            "ff9e3d",
+            "4dd0ff",
+            "ffd23f"
+          ],
+          "biome": [
+            [
+              -20,
+              "2b7fbf"
+            ],
+            [
+              0,
+              "4fc3d6"
+            ],
+            [
+              4,
+              "ffe0a3"
+            ],
+            [
+              30,
+              "ffc96b"
+            ],
+            [
+              52,
+              "f29a52"
+            ],
+            [
+              70,
+              "c96b4a"
+            ],
+            [
+              100000,
+              "fff0d6"
+            ]
+          ],
+          "title": "SAHRA · STØVHAVN",
+          "sub": "Ørkenverden · Minelauget",
+          "market": {
+            "malm": {
+              "mode": "sell",
+              "base": 18
+            },
+            "frugt": {
+              "mode": "buy",
+              "base": 40
+            },
+            "elektronik": {
+              "mode": "buy",
+              "base": 80
+            },
+            "krystal": {
+              "mode": "buy",
+              "base": 90
+            }
+          },
+          "upgrades": [
+            "repair",
+            "cargo"
+          ],
+          "rumors": [
+            "Minearbejder Kael: “Malm er billigt her. Ignis betaler det dobbelte til smelteværkerne.”",
+            "Bartender Zeth: “Sandstorme slår sensorerne ud. Hold øje med lyssøjlen.”"
+          ],
+          "decor": "cactus",
+          "flora": {
+            "tree": [
+              "3fae6a",
+              "c96b4a",
+              "f29a52"
+            ],
+            "band": [
+              4,
+              45
+            ],
+            "size": [
+              3,
+              9
+            ],
+            "width": 0.3,
+            "density": 0.025,
+            "rocks": 0.05,
+            "rock": [
+              "f29a52",
+              "c96b4a",
+              "ffe0a3"
+            ]
+          },
+          "noise_offset": [
+            21.7,
+            4.4,
+            9.1
+          ],
+          "weather": {
+            "type": "sandstorm"
+          },
+          "outposts": [
+            {
+              "id": "sahra_mine",
+              "name": "Dybgruben",
+              "kind": "mine",
+              "dist": 300,
+              "bearing": 120,
+              "pad_h": 12,
+              "title": "DYBGRUBEN · MINESTATION",
+              "sub": "Minelauget · Malmudvinding",
+              "market": {
+                "malm": {
+                  "mode": "sell",
+                  "base": 12
+                },
+                "braendstof": {
+                  "mode": "buy",
+                  "base": 34
+                },
+                "frugt": {
+                  "mode": "buy",
+                  "base": 46
+                }
+              },
+              "upgrades": [
+                "repair",
+                "cargo"
+              ],
+              "rumors": [
+                "Boret går 2 km ned. Minearbejderne siger, de kan høre noget banke dernede.",
+                "Malmen er billigst her – men vejen ud går gennem sandstormene."
+              ]
+            },
+            {
+              "id": "sahra_oasis",
+              "name": "Oase-7",
+              "kind": "town",
+              "dist": 340,
+              "bearing": 260,
+              "pad_h": 10,
+              "title": "OASE-7",
+              "sub": "Lille handelsby ved den eneste kilde",
+              "market": {
+                "frugt": {
+                  "mode": "sell",
+                  "base": 30
+                },
+                "elektronik": {
+                  "mode": "buy",
+                  "base": 78
+                },
+                "krystal": {
+                  "mode": "buy",
+                  "base": 88
+                }
+              },
+              "upgrades": [
+                "repair"
+              ],
+              "rumors": [
+                "Vandet her er mere værd end malmen.",
+                "En gammel pilot siger, at sandstormene kommer oftere end før."
+              ]
+            }
+          ],
+          "features": [
+            {
+              "type": "canyon",
+              "dist": 316,
+              "bearing": 250,
+              "heading": 80,
+              "length": 560,
+              "width": 60,
+              "depth": 42,
+              "dry": true
+            },
+            {
+              "type": "cave",
+              "dist": 366,
+              "bearing": 170,
+              "heading": 0
+            }
+          ]
+        },
+        {
+          "id": "ignis",
+          "name": "Ignis",
+          "pos": [
+            4480,
+            -1280,
+            -8320
+          ],
+          "radius": 900,
+          "amp": 0.6,
+          "seed": 79,
+          "pad_h": 14,
+          "sky": "ff8f6b",
+          "atmo": "ff8f6b",
+          "cloud": "9a8a9a",
+          "buildings": [
+            "5a5f8a",
+            "ff4f1f",
+            "ffd23f"
+          ],
+          "biome": [
+            [
+              -20,
+              "ff4f1f"
+            ],
+            [
+              0,
+              "ff9e3d"
+            ],
+            [
+              4,
+              "3a2a3a"
+            ],
+            [
+              30,
+              "5a3a4a"
+            ],
+            [
+              52,
+              "2a1d2a"
+            ],
+            [
+              70,
+              "8a4a5a"
+            ],
+            [
+              100000,
+              "ffd23f"
+            ]
+          ],
+          "title": "IGNIS · SMELTEHYTTEN",
+          "sub": "Vulkanverden · Industrikompagniet",
+          "market": {
+            "braendstof": {
+              "mode": "sell",
+              "base": 10
+            },
+            "malm": {
+              "mode": "buy",
+              "base": 60
+            },
+            "frugt": {
+              "mode": "buy",
+              "base": 50
+            },
+            "krystal": {
+              "mode": "buy",
+              "base": 85
+            }
+          },
+          "upgrades": [
+            "repair",
+            "laser"
+          ],
+          "rumors": [
+            "Smed Brann: “Smelteværkerne sluger al den malm, I kan skaffe.”",
+            "Bartender Asa: “Brændstof er næsten gratis her. Varmen kommer fra undergrunden.”"
+          ],
+          "decor": "lava",
+          "flora": {
+            "tree": [
+              "2a1d2a",
+              "5a3a4a",
+              "3a2a3a"
+            ],
+            "band": [
+              4,
+              70
+            ],
+            "size": [
+              4,
+              16
+            ],
+            "width": 0.3,
+            "density": 0.04,
+            "rocks": 0.06,
+            "rock": [
+              "3a2a3a",
+              "5a3a4a",
+              "ff4f1f"
+            ]
+          },
+          "noise_offset": [
+            7.9,
+            13.3,
+            1.2
+          ],
+          "weather": {
+            "type": "lava"
+          },
+          "outposts": [
+            {
+              "id": "ignis_mine",
+              "name": "Magmaboring Øst",
+              "kind": "mine",
+              "dist": 520,
+              "bearing": 90,
+              "pad_h": 16,
+              "title": "MAGMABORING ØST",
+              "sub": "Industrikompagniet · Brændstofraffinaderi",
+              "market": {
+                "braendstof": {
+                  "mode": "sell",
+                  "base": 8
+                },
+                "malm": {
+                  "mode": "buy",
+                  "base": 64
+                },
+                "frugt": {
+                  "mode": "buy",
+                  "base": 55
+                }
+              },
+              "upgrades": [
+                "repair",
+                "laser"
+              ],
+              "rumors": [
+                "Hold dig højt over lavahavet – skjoldene smelter hurtigere, end man tror.",
+                "Raffinaderiet betaler ekstra for malm, når vulkanen er urolig."
+              ]
+            },
+            {
+              "id": "ignis_fort",
+              "name": "Fort Askebjerg",
+              "kind": "military",
+              "dist": 560,
+              "bearing": 230,
+              "pad_h": 20,
+              "title": "FORT ASKEBJERG",
+              "sub": "Concord Patrol · Forpost",
+              "market": {
+                "elektronik": {
+                  "mode": "buy",
+                  "base": 82
+                },
+                "braendstof": {
+                  "mode": "buy",
+                  "base": 20
+                }
+              },
+              "upgrades": [
+                "repair",
+                "shield",
+                "missile_defense"
+              ],
+              "rumors": [
+                "Forposten holder øje med piraterne, der gemmer sig i røgen.",
+                "Kommandanten vil gerne have flere patruljer herude."
+              ]
+            }
+          ],
+          "features": [
+            {
+              "type": "volcano",
+              "dist": 700,
+              "bearing": 120,
+              "size": 420,
+              "height": 320
+            },
+            {
+              "type": "volcano",
+              "dist": 1000,
+              "bearing": 280,
+              "size": 340,
+              "height": 260
+            },
+            {
+              "type": "cave",
+              "dist": 1050,
+              "bearing": 20,
+              "heading": 70
+            }
+          ]
+        }
+      ],
+      "stations": [
+        {
+          "id": "concord_base",
+          "name": "Bastion Kepler",
+          "pos": [
+            0,
+            0,
+            60
+          ],
+          "base": true,
+          "patrol": true,
+          "title": "BASTION KEPLER · CONCORD PATROL HQ",
+          "sub": "Concord Patrol · Hovedkvarter",
+          "market": {
+            "braendstof": {
+              "mode": "sell",
+              "base": 14
+            },
+            "malm": {
+              "mode": "buy",
+              "base": 32
+            }
+          },
+          "upgrades": [
+            "repair",
+            "missiles"
+          ],
+          "rumors": [
+            "Vagtchef Rhee: “Velkommen til Bastion Kepler. Tavlen opdateres efter hver mission.”",
+            "Mekaniker Juno: “Flere fuldførte missioner betyder flere moduler. Våbenlageret er næste.”",
+            "Pilot Aske: “Ingen har hørt fra hjemverdenen siden the Silence. Vi er alt, der står imellem.”",
+            "Analytiker Vey: “Architect-signalerne i Frosta bliver stærkere. Nogen burde kigge nærmere.”"
+          ]
+        },
+        {
+          "id": "kepler_station",
+          "name": "Kepler Station",
+          "pos": [
+            450,
+            60,
+            -250
+          ],
+          "title": "KEPLER STATION · DOK 3",
+          "sub": "Handelsstation · Handelsforbundet",
+          "market": {
+            "elektronik": {
+              "mode": "sell",
+              "base": 40
+            },
+            "braendstof": {
+              "mode": "sell",
+              "base": 14
+            },
+            "frugt": {
+              "mode": "buy",
+              "base": 34
+            },
+            "malm": {
+              "mode": "buy",
+              "base": 30
+            },
+            "krystal": {
+              "mode": "buy",
+              "base": 110
+            },
+            "vragdel": {
+              "mode": "buy",
+              "base": 40
+            }
+          },
+          "upgrades": [
+            "repair",
+            "cargo",
+            "shield",
+            "thrusters",
+            "missiles",
+            "missile_defense"
+          ],
+          "rumors": [
+            "Dokformand Ruth: “Viridia mangler elektronik. Vi har lager nok.”",
+            "Pilot Mags: “Et lastmodul tjener sig hjem på tre ture.”"
+          ]
+        }
+      ],
+      "lanes": [
+        {
+          "from": "kepler_station",
+          "to": "viridia"
+        }
+      ],
+      "gates": [
+        {
+          "id": "kepler_gate",
+          "pos": [
+            -560,
+            120,
+            -520
+          ],
+          "to": "frosta_gate",
+          "label": "JUMP GATE → FROSTA"
+        },
+        {
+          "id": "kepler_gate_s",
+          "pos": [
+            760,
+            -60,
+            420
+          ],
+          "to": "solhavn_gate_k",
+          "label": "JUMP GATE → SOLHAVN"
+        }
+      ],
+      "asteroids": [
+        {
+          "center": [
+            0,
+            0,
+            -430
+          ],
+          "spread": [
+            380,
+            160,
+            350
+          ],
+          "count": 30,
+          "kind": "malm",
+          "colors": [
+            "8a6bbf",
+            "b07a55",
+            "6f7fa8",
+            "c76b9a"
+          ],
+          "seed": 5
+        }
+      ],
+      "freighters": {
+        "count": 4,
+        "from": "kepler_station",
+        "to": "viridia",
+        "cargo_out": "elektronik",
+        "cargo_home": "frugt"
+      },
+      "security": 0.9
+    },
+    "frosta": {
+      "name": "Frosta",
+      "origin": [
+        0,
+        0,
+        -40000
+      ],
+      "space": "0a1838",
+      "sun": "cfeeff",
+      "sun_dir": [
+        0.5,
+        0.4,
+        -0.3
+      ],
+      "nebula": [
+        "4dd0ff",
+        "c77dff",
+        "dff2ff"
+      ],
+      "planets": [
+        {
+          "id": "frosta",
+          "name": "Frosta",
+          "pos": [
+            800,
+            -576,
+            -5120
+          ],
+          "radius": 1560,
+          "amp": 1.0,
+          "seed": 113,
+          "pad_h": 22,
+          "sky": "cfe6ff",
+          "atmo": "dff2ff",
+          "cloud": "f4f8ff",
+          "buildings": [
+            "9fe2ff",
+            "c77dff",
+            "ffffff"
+          ],
+          "biome": [
+            [
+              -20,
+              "2d5fc4"
+            ],
+            [
+              0,
+              "7fc8ff"
+            ],
+            [
+              4,
+              "eaf6ff"
+            ],
+            [
+              30,
+              "d2e4ff"
+            ],
+            [
+              52,
+              "a9bcff"
+            ],
+            [
+              70,
+              "8a6bbf"
+            ],
+            [
+              100000,
+              "ffffff"
+            ]
+          ],
+          "title": "FROSTA · NORDLYS BY · PATROL-UDPOST",
+          "sub": "Isverden · Nordforbundet",
+          "market": {
+            "krystal": {
+              "mode": "sell",
+              "base": 55
+            },
+            "frugt": {
+              "mode": "buy",
+              "base": 58
+            },
+            "elektronik": {
+              "mode": "buy",
+              "base": 64
+            },
+            "braendstof": {
+              "mode": "buy",
+              "base": 44
+            },
+            "malm": {
+              "mode": "buy",
+              "base": 36
+            }
+          },
+          "upgrades": [
+            "repair",
+            "laser",
+            "shield",
+            "cargo",
+            "thrusters",
+            "missiles"
+          ],
+          "rumors": [
+            "Isfisker Tove: “Vi betaler godt for frugt. Her vokser intet.”",
+            "Bartender Ulv: “Kepler Station betaler over hundrede for en krystal.”"
+          ],
+          "decor": "crystal",
+          "flora": {
+            "tree": [
+              "d2e4ff",
+              "9fe2ff",
+              "ffffff"
+            ],
+            "band": [
+              4,
+              70
+            ],
+            "size": [
+              4,
+              14
+            ],
+            "width": 0.25,
+            "density": 0.05,
+            "rocks": 0.03,
+            "rock": [
+              "8a6bbf",
+              "a9bcff",
+              "ffffff"
+            ]
+          },
+          "noise_offset": [
+            11.3,
+            5.2,
+            2.9
+          ],
+          "patrol": true,
+          "outposts": [
+            {
+              "id": "frosta_mine",
+              "name": "Isbrud Krystalmine",
+              "kind": "mine",
+              "dist": 640,
+              "bearing": 140,
+              "pad_h": 16,
+              "title": "ISBRUD · KRYSTALMINE",
+              "sub": "Nordforbundet · Krystaludvinding",
+              "market": {
+                "krystal": {
+                  "mode": "sell",
+                  "base": 42
+                },
+                "frugt": {
+                  "mode": "buy",
+                  "base": 62
+                },
+                "braendstof": {
+                  "mode": "buy",
+                  "base": 46
+                }
+              },
+              "upgrades": [
+                "repair"
+              ],
+              "rumors": [
+                "Krystallerne synger, når de bliver hugget løs.",
+                "Minen er farlig om natten – nordlyset forstyrrer instrumenterne."
+              ]
+            },
+            {
+              "id": "frosta_lab",
+              "name": "Polarstation Vega",
+              "kind": "research",
+              "dist": 600,
+              "bearing": 290,
+              "pad_h": 20,
+              "title": "POLARSTATION VEGA",
+              "sub": "Forskning · Nordforbundet",
+              "market": {
+                "elektronik": {
+                  "mode": "sell",
+                  "base": 56
+                },
+                "krystal": {
+                  "mode": "buy",
+                  "base": 70
+                }
+              },
+              "upgrades": [
+                "repair",
+                "thrusters"
+              ],
+              "rumors": [
+                "Vega har målt et signal fra den anden side af jump gaten.",
+                "Forskerne leder efter piloter til en ekspedition – senere."
+              ]
+            }
+          ],
+          "features": [
+            {
+              "type": "canyon",
+              "dist": 1300,
+              "bearing": 100,
+              "heading": 0,
+              "length": 1600,
+              "width": 90,
+              "depth": 110
+            },
+            {
+              "type": "mesa",
+              "dist": 1100,
+              "bearing": 240,
+              "size": 190,
+              "height": 120,
+              "fall": 60
+            },
+            {
+              "type": "cave",
+              "dist": 1150,
+              "bearing": 330,
+              "heading": 30
+            },
+            {
+              "type": "cave",
+              "dist": 1700,
+              "bearing": 30,
+              "heading": 100
+            }
+          ]
+        },
+        {
+          "id": "lumina",
+          "name": "Lumina",
+          "pos": [
+            -6080,
+            960,
+            -3840
+          ],
+          "radius": 420,
+          "amp": 0.8,
+          "seed": 22,
+          "pad_h": 16,
+          "sky": "e0b8ff",
+          "atmo": "e8c8ff",
+          "cloud": "ffe8ff",
+          "buildings": [
+            "ff4f8b",
+            "4dffe1",
+            "ffd23f"
+          ],
+          "biome": [
+            [
+              -20,
+              "3a1a8a"
+            ],
+            [
+              0,
+              "7b4dff"
+            ],
+            [
+              4,
+              "ff9ed2"
+            ],
+            [
+              30,
+              "c77dff"
+            ],
+            [
+              52,
+              "8a4dcc"
+            ],
+            [
+              70,
+              "4dffe1"
+            ],
+            [
+              100000,
+              "ffffff"
+            ]
+          ],
+          "title": "LUMINA · GLØDEBY",
+          "sub": "Junglemåne · Nordforbundet",
+          "market": {
+            "frugt": {
+              "mode": "sell",
+              "base": 16
+            },
+            "elektronik": {
+              "mode": "buy",
+              "base": 75
+            },
+            "braendstof": {
+              "mode": "buy",
+              "base": 38
+            },
+            "malm": {
+              "mode": "buy",
+              "base": 40
+            },
+            "krystal": {
+              "mode": "buy",
+              "base": 70
+            }
+          },
+          "upgrades": [
+            "repair",
+            "shield"
+          ],
+          "rumors": [
+            "Plukker Ilo: “Glødefrugt er billig her og dyr i Frosta.”",
+            "Bartender Nyx: “Vi mangler elektronik til drivhusene.”"
+          ],
+          "decor": "mushroom",
+          "flora": {
+            "tree": [
+              "4dffe1",
+              "ff4f8b",
+              "ffd23f",
+              "c77dff"
+            ],
+            "band": [
+              4,
+              54
+            ],
+            "size": [
+              3,
+              10
+            ],
+            "width": 0.6,
+            "density": 0.08,
+            "rocks": 0.02,
+            "rock": [
+              "8a4dcc",
+              "4dffe1"
+            ]
+          },
+          "noise_offset": [
+            2.2,
+            17.5,
+            6.6
+          ],
+          "outposts": [
+            {
+              "id": "lumina_farm",
+              "name": "Svampehaverne",
+              "kind": "farm",
+              "dist": 280,
+              "bearing": 60,
+              "pad_h": 14,
+              "title": "SVAMPEHAVERNE",
+              "sub": "Landbrug · Lysende svampe",
+              "market": {
+                "frugt": {
+                  "mode": "sell",
+                  "base": 11
+                },
+                "elektronik": {
+                  "mode": "buy",
+                  "base": 72
+                }
+              },
+              "upgrades": [
+                "repair"
+              ],
+              "rumors": [
+                "Svampene lyser kraftigere, når der er pirater i nærheden. Siger de."
+              ]
+            },
+            {
+              "id": "lumina_lab",
+              "name": "Sporelaboratoriet",
+              "kind": "research",
+              "dist": 300,
+              "bearing": 200,
+              "pad_h": 18,
+              "title": "SPORELABORATORIET",
+              "sub": "Forskning · Biokemi",
+              "market": {
+                "krystal": {
+                  "mode": "buy",
+                  "base": 90
+                },
+                "elektronik": {
+                  "mode": "sell",
+                  "base": 60
+                }
+              },
+              "upgrades": [
+                "repair",
+                "missile_defense"
+              ],
+              "rumors": [
+                "Sporerne her kan bruges til skjoldceller. Ingen ved helt hvordan endnu."
+              ]
+            }
+          ],
+          "features": [
+            {
+              "type": "mesa",
+              "dist": 333,
+              "bearing": 100,
+              "size": 99,
+              "height": 77,
+              "fall": 180
+            },
+            {
+              "type": "mesa",
+              "dist": 500,
+              "bearing": 220,
+              "size": 82,
+              "height": 70,
+              "fall": 0
+            }
+          ]
+        }
+      ],
+      "stations": [
+        {
+          "id": "dreadnought",
+          "name": "CNS Vogteren",
+          "pos": [
+            392,
+            -282,
+            -2508
+          ],
+          "mobile": true,
+          "stops": [
+            [
+              392,
+              -282,
+              -2508
+            ],
+            [
+              -2207,
+              1138,
+              -2772
+            ],
+            [
+              -4806,
+              759,
+              -3035
+            ]
+          ],
+          "park": 150,
+          "shipyard": true,
+          "title": "CNS VOGTEREN · CONCORD-DREADNOUGHT",
+          "sub": "Flyvende base · Hangar og værft",
+          "market": {
+            "braendstof": {
+              "mode": "sell",
+              "base": 15
+            },
+            "elektronik": {
+              "mode": "sell",
+              "base": 42
+            },
+            "malm": {
+              "mode": "buy",
+              "base": 33
+            },
+            "krystal": {
+              "mode": "buy",
+              "base": 112
+            },
+            "vragdel": {
+              "mode": "buy",
+              "base": 40
+            }
+          },
+          "upgrades": [
+            "repair",
+            "missiles",
+            "missile_defense",
+            "thrusters"
+          ],
+          "rumors": [
+            "Kommandør Halvorsen: “Vogteren bliver aldrig længe ét sted. Skift skib nu, hvis du vil.”",
+            "Hangarchef Mbeki: “Alle dine skibe kan hentes frem herfra – vi har plads til dem alle.”",
+            "Navigatør Sørlie: “Næste hop går til den anden side af systemet. Hold dig klar.”"
+          ]
+        }
+      ],
+      "lanes": [],
+      "gates": [
+        {
+          "id": "frosta_gate",
+          "pos": [
+            0,
+            0,
+            0
+          ],
+          "to": "kepler_gate",
+          "face": "frosta",
+          "label": "JUMP GATE → KEPLER RAND"
+        },
+        {
+          "id": "frosta_gate_e",
+          "pos": [
+            900,
+            100,
+            700
+          ],
+          "to": "ekko_gate",
+          "label": "JUMP GATE → EKKOET"
+        }
+      ],
+      "asteroids": [
+        {
+          "center": [
+            -420,
+            0,
+            -430
+          ],
+          "spread": [
+            380,
+            160,
+            350
+          ],
+          "count": 22,
+          "kind": "krystal",
+          "colors": [
+            "c77dff",
+            "9fe2ff",
+            "e0c8ff"
+          ],
+          "seed": 9
+        }
+      ],
+      "security": 0.45
+    },
+    "solhavn": {
+      "name": "Solhavn",
+      "origin": [
+        40000,
+        0,
+        0
+      ],
+      "space": "1f0f20",
+      "sun": "ffb347",
+      "sun_dir": [
+        0.6,
+        0.3,
+        -0.4
+      ],
+      "nebula": [
+        "ff9e3d",
+        "ff4f8b",
+        "ffd23f"
+      ],
+      "security": 0.75,
+      "planets": [
+        {
+          "id": "aurum",
+          "name": "Aurum",
+          "pos": [
+            4800,
+            640,
+            -2880
+          ],
+          "radius": 520,
+          "amp": 0.9,
+          "seed": 401,
+          "pad_h": 18,
+          "sky": "ffe0a0",
+          "atmo": "ffd07a",
+          "cloud": "fff6dd",
+          "buildings": [
+            "ffd23f",
+            "e8c48a",
+            "4dd0ff"
+          ],
+          "biome": [
+            [
+              -20,
+              "7a4a1f"
+            ],
+            [
+              0,
+              "b07a3a"
+            ],
+            [
+              4,
+              "e8c48a"
+            ],
+            [
+              30,
+              "ffd27a"
+            ],
+            [
+              52,
+              "e0a050"
+            ],
+            [
+              70,
+              "b07a55"
+            ],
+            [
+              100000,
+              "fff3d6"
+            ]
+          ],
+          "title": "AURUM · GULDHAVNEN",
+          "sub": "Ørkenverden · Handelsforbundets hovedstad",
+          "patrol": true,
+          "market": {
+            "elektronik": {
+              "mode": "sell",
+              "base": 36
+            },
+            "braendstof": {
+              "mode": "buy",
+              "base": 30
+            },
+            "frugt": {
+              "mode": "buy",
+              "base": 44
+            },
+            "malm": {
+              "mode": "buy",
+              "base": 50
+            },
+            "krystal": {
+              "mode": "buy",
+              "base": 120
+            }
+          },
+          "upgrades": [
+            "repair",
+            "cargo",
+            "thrusters",
+            "laser",
+            "missiles"
+          ],
+          "rumors": [
+            "Handelsmester Oro: “Alt, hvad der handles i the Reach, går gennem Aurum før eller siden.”",
+            "Pilot Sabe: “Ravnebæltet bag den anden gate? Der flyver kun pirater og tåber.”"
+          ],
+          "decor": "cactus",
+          "flora": {
+            "tree": [
+              "3fae6a",
+              "c96b4a",
+              "f29a52"
+            ],
+            "band": [
+              4,
+              45
+            ],
+            "size": [
+              3,
+              9
+            ],
+            "width": 0.3,
+            "density": 0.025,
+            "rocks": 0.05,
+            "rock": [
+              "f29a52",
+              "c96b4a",
+              "ffe0a3"
+            ]
+          },
+          "noise_offset": [
+            4.1,
+            9.3,
+            2.8
+          ],
+          "weather": {
+            "type": "sandstorm"
+          },
+          "outposts": [
+            {
+              "id": "aurum_mine",
+              "name": "Guldgruben",
+              "kind": "mine",
+              "dist": 340,
+              "bearing": 100,
+              "pad_h": 14,
+              "title": "GULDGRUBEN",
+              "sub": "Handelsforbundet · Malmudvinding",
+              "market": {
+                "malm": {
+                  "mode": "sell",
+                  "base": 14
+                },
+                "braendstof": {
+                  "mode": "buy",
+                  "base": 32
+                },
+                "frugt": {
+                  "mode": "buy",
+                  "base": 48
+                }
+              },
+              "upgrades": [
+                "repair"
+              ],
+              "rumors": [
+                "Guldet er for længst væk. Nu er det malm."
+              ]
+            }
+          ],
+          "features": [
+            {
+              "type": "canyon",
+              "dist": 433,
+              "bearing": 200,
+              "heading": 60,
+              "length": 680,
+              "width": 67,
+              "depth": 48,
+              "dry": true
+            },
+            {
+              "type": "cave",
+              "dist": 366,
+              "bearing": 50,
+              "heading": 20
+            }
+          ]
+        },
+        {
+          "id": "thalassa",
+          "name": "Thalassa",
+          "pos": [
+            -4160,
+            -480,
+            -5440
+          ],
+          "radius": 470,
+          "amp": 0.55,
+          "seed": 433,
+          "pad_h": 14,
+          "sky": "8fe0ff",
+          "atmo": "9fe8ff",
+          "cloud": "ffffff",
+          "buildings": [
+            "e6ecff",
+            "2ec4d6",
+            "ff7a59"
+          ],
+          "biome": [
+            [
+              -20,
+              "0f4fa8"
+            ],
+            [
+              0,
+              "2ec4d6"
+            ],
+            [
+              4,
+              "fff0b0"
+            ],
+            [
+              30,
+              "4fd36b"
+            ],
+            [
+              52,
+              "2fa04f"
+            ],
+            [
+              70,
+              "8a8fb0"
+            ],
+            [
+              100000,
+              "ffffff"
+            ]
+          ],
+          "title": "THALASSA · KORALBY",
+          "sub": "Havverden · Handelsforbundet",
+          "market": {
+            "frugt": {
+              "mode": "sell",
+              "base": 10
+            },
+            "elektronik": {
+              "mode": "buy",
+              "base": 70
+            },
+            "malm": {
+              "mode": "buy",
+              "base": 46
+            },
+            "braendstof": {
+              "mode": "buy",
+              "base": 32
+            }
+          },
+          "upgrades": [
+            "repair",
+            "shield"
+          ],
+          "rumors": [
+            "Fisker Maia: “Tordenvejret kommer hver eftermiddag. Flyv lavt og hurtigt.”",
+            "Havnefoged Jens: “Tang og frugt herfra sælger godt i Kepler.”"
+          ],
+          "decor": "tree",
+          "flora": {
+            "tree": [
+              "2fa04f",
+              "3fae6a",
+              "6bdc4f",
+              "1f7a3f"
+            ],
+            "band": [
+              4,
+              54
+            ],
+            "size": [
+              5,
+              13
+            ],
+            "width": 0.35,
+            "density": 0.09,
+            "rocks": 0.025,
+            "rock": [
+              "a77be0",
+              "8a6bbf",
+              "c9b8e8"
+            ]
+          },
+          "noise_offset": [
+            7.7,
+            1.2,
+            5.5
+          ],
+          "weather": {
+            "type": "lightning"
+          },
+          "outposts": [
+            {
+              "id": "thalassa_farm",
+              "name": "Tangfarmen",
+              "kind": "farm",
+              "dist": 300,
+              "bearing": 200,
+              "pad_h": 10,
+              "title": "TANGFARMEN",
+              "sub": "Havbrug · Frugt og tang",
+              "market": {
+                "frugt": {
+                  "mode": "sell",
+                  "base": 8
+                },
+                "elektronik": {
+                  "mode": "buy",
+                  "base": 74
+                }
+              },
+              "upgrades": [
+                "repair"
+              ],
+              "rumors": [
+                "Tangen gløder om natten. Ingen ved hvorfor."
+              ]
+            }
+          ],
+          "features": [
+            {
+              "type": "mesa",
+              "dist": 333,
+              "bearing": 120,
+              "size": 99,
+              "height": 77,
+              "fall": 200
+            },
+            {
+              "type": "mesa",
+              "dist": 500,
+              "bearing": 270,
+              "size": 82,
+              "height": 70,
+              "fall": 90
+            }
+          ]
+        }
+      ],
+      "stations": [
+        {
+          "id": "solhavn_station",
+          "name": "Solhavn Handelsring",
+          "pos": [
+            400,
+            80,
+            500
+          ],
+          "shipyard": true,
+          "title": "SOLHAVN HANDELSRING · VÆRFT",
+          "sub": "Handelsstation · Skibsværft",
+          "market": {
+            "elektronik": {
+              "mode": "sell",
+              "base": 34
+            },
+            "braendstof": {
+              "mode": "sell",
+              "base": 16
+            },
+            "frugt": {
+              "mode": "buy",
+              "base": 36
+            },
+            "malm": {
+              "mode": "buy",
+              "base": 34
+            },
+            "krystal": {
+              "mode": "buy",
+              "base": 115
+            },
+            "vragdel": {
+              "mode": "buy",
+              "base": 40
+            }
+          },
+          "upgrades": [
+            "repair",
+            "cargo",
+            "shield",
+            "thrusters",
+            "missiles",
+            "missile_defense"
+          ],
+          "rumors": [
+            "Værftsmester Kira: “Hveps, Bison eller Albatros – vi bygger dem alle.”",
+            "Kaptajn Lund: “Solhavn er sikkert. Det er vejen herfra, der ikke er.”"
+          ]
+        }
+      ],
+      "lanes": [
+        {
+          "from": "solhavn_station",
+          "to": "aurum"
+        },
+        {
+          "from": "solhavn_station",
+          "to": "thalassa"
+        }
+      ],
+      "gates": [
+        {
+          "id": "solhavn_gate_k",
+          "pos": [
+            -760,
+            100,
+            300
+          ],
+          "to": "kepler_gate_s",
+          "label": "JUMP GATE → KEPLER RAND"
+        },
+        {
+          "id": "solhavn_gate_r",
+          "pos": [
+            760,
+            -80,
+            -1500
+          ],
+          "to": "ravne_gate",
+          "label": "JUMP GATE → RAVNEBÆLTET"
+        }
+      ],
+      "asteroids": [
+        {
+          "center": [
+            300,
+            0,
+            1300
+          ],
+          "spread": [
+            350,
+            140,
+            300
+          ],
+          "count": 26,
+          "kind": "malm",
+          "colors": [
+            "b07a55",
+            "8a6bbf",
+            "e0a050"
+          ],
+          "seed": 21
+        }
+      ],
+      "freighters": {
+        "count": 4,
+        "from": "solhavn_station",
+        "to": "thalassa",
+        "cargo_out": "elektronik",
+        "cargo_home": "frugt"
+      }
+    },
+    "ravne": {
+      "name": "Ravnebæltet",
+      "origin": [
+        40000,
+        0,
+        -40000
+      ],
+      "space": "1a0510",
+      "sun": "ff5a5a",
+      "sun_dir": [
+        -0.4,
+        0.5,
+        0.5
+      ],
+      "nebula": [
+        "ff3b3b",
+        "5a1a3a",
+        "ff9e3d"
+      ],
+      "security": 0.05,
+      "planets": [
+        {
+          "id": "korvus",
+          "name": "Korvus",
+          "pos": [
+            -3840,
+            320,
+            -4160
+          ],
+          "radius": 1260,
+          "amp": 1.1,
+          "seed": 517,
+          "pad_h": 16,
+          "sky": "8a3a3a",
+          "atmo": "a04a3a",
+          "cloud": "5a4a4a",
+          "buildings": [
+            "3a2350",
+            "ff3b3b",
+            "5a5f8a"
+          ],
+          "biome": [
+            [
+              -20,
+              "ff4f1f"
+            ],
+            [
+              0,
+              "ff9e3d"
+            ],
+            [
+              4,
+              "2a1d2a"
+            ],
+            [
+              30,
+              "4a2a3a"
+            ],
+            [
+              52,
+              "3a1d2a"
+            ],
+            [
+              70,
+              "6a3a4a"
+            ],
+            [
+              100000,
+              "c9a0a0"
+            ]
+          ],
+          "title": "KORVUS · SORTHAVN",
+          "sub": "Piratrede · ingen lov",
+          "market": {
+            "krystal": {
+              "mode": "sell",
+              "base": 38
+            },
+            "elektronik": {
+              "mode": "sell",
+              "base": 28
+            },
+            "braendstof": {
+              "mode": "buy",
+              "base": 40
+            },
+            "frugt": {
+              "mode": "buy",
+              "base": 72
+            },
+            "malm": {
+              "mode": "buy",
+              "base": 30
+            }
+          },
+          "upgrades": [
+            "repair",
+            "laser",
+            "missiles"
+          ],
+          "rumors": [
+            "En maskeret mand: “Concord? Herude er Concord bare et ord.”",
+            "Smugler Vex: “Krystal og elektronik til halv pris. Spørg ikke hvorfra.”"
+          ],
+          "decor": "lava",
+          "flora": {
+            "tree": [
+              "2a1d2a",
+              "5a3a4a",
+              "3a2a3a"
+            ],
+            "band": [
+              4,
+              70
+            ],
+            "size": [
+              4,
+              16
+            ],
+            "width": 0.3,
+            "density": 0.04,
+            "rocks": 0.06,
+            "rock": [
+              "3a2a3a",
+              "5a3a4a",
+              "ff4f1f"
+            ]
+          },
+          "noise_offset": [
+            3.3,
+            6.6,
+            9.9
+          ],
+          "weather": {
+            "type": "lava"
+          },
+          "outposts": [
+            {
+              "id": "korvus_market",
+              "name": "Skrotmarkedet",
+              "kind": "town",
+              "dist": 600,
+              "bearing": 60,
+              "pad_h": 12,
+              "title": "SKROTMARKEDET",
+              "sub": "Sortbørs",
+              "market": {
+                "elektronik": {
+                  "mode": "sell",
+                  "base": 24
+                },
+                "krystal": {
+                  "mode": "buy",
+                  "base": 88
+                },
+                "frugt": {
+                  "mode": "buy",
+                  "base": 76
+                }
+              },
+              "upgrades": [
+                "repair",
+                "missiles"
+              ],
+              "rumors": [
+                "Alt er til salg her. Også dig."
+              ]
+            }
+          ],
+          "features": [
+            {
+              "type": "volcano",
+              "dist": 1000,
+              "bearing": 200,
+              "size": 460,
+              "height": 340
+            },
+            {
+              "type": "canyon",
+              "dist": 1100,
+              "bearing": 110,
+              "heading": 20,
+              "length": 1400,
+              "width": 80,
+              "depth": 110
+            },
+            {
+              "type": "cave",
+              "dist": 1000,
+              "bearing": 300,
+              "heading": 10
+            }
+          ]
+        }
+      ],
+      "stations": [],
+      "lanes": [],
+      "gates": [
+        {
+          "id": "ravne_gate",
+          "pos": [
+            0,
+            0,
+            0
+          ],
+          "to": "solhavn_gate_r",
+          "face": "korvus",
+          "label": "JUMP GATE → SOLHAVN"
+        }
+      ],
+      "asteroids": [
+        {
+          "center": [
+            500,
+            0,
+            -400
+          ],
+          "spread": [
+            420,
+            180,
+            420
+          ],
+          "count": 34,
+          "kind": "malm",
+          "colors": [
+            "5a3a4a",
+            "8a4a3a",
+            "b07a55"
+          ],
+          "seed": 31
+        },
+        {
+          "center": [
+            -300,
+            60,
+            600
+          ],
+          "spread": [
+            300,
+            140,
+            300
+          ],
+          "count": 24,
+          "kind": "krystal",
+          "colors": [
+            "ff4f8b",
+            "c77dff",
+            "ff9e3d"
+          ],
+          "seed": 37
+        }
+      ]
+    },
+    "ekko": {
+      "name": "Ekkoet",
+      "origin": [
+        -40000,
+        0,
+        -40000
+      ],
+      "space": "05101a",
+      "sun": "9fe2ff",
+      "sun_dir": [
+        0.3,
+        0.6,
+        0.4
+      ],
+      "nebula": [
+        "4dffe1",
+        "1a5f8a",
+        "c77dff"
+      ],
+      "security": 0.2,
+      "planets": [
+        {
+          "id": "obelisk",
+          "name": "Obelisk",
+          "pos": [
+            4480,
+            480,
+            -3520
+          ],
+          "radius": 480,
+          "amp": 1.0,
+          "seed": 611,
+          "pad_h": 18,
+          "sky": "6fd6c8",
+          "atmo": "8fe8d8",
+          "cloud": "e0fff8",
+          "buildings": [
+            "e6ecff",
+            "4dffe1",
+            "c77dff"
+          ],
+          "biome": [
+            [
+              -20,
+              "0a2a3a"
+            ],
+            [
+              0,
+              "1a6b6b"
+            ],
+            [
+              4,
+              "9fe2d0"
+            ],
+            [
+              30,
+              "4a8a8a"
+            ],
+            [
+              52,
+              "2a5a6a"
+            ],
+            [
+              70,
+              "c77dff"
+            ],
+            [
+              100000,
+              "e8fff8"
+            ]
+          ],
+          "title": "OBELISK · LEJR STILHED",
+          "sub": "Architect-verden · Concord Videnskab",
+          "sites": 9,
+          "market": {
+            "krystal": {
+              "mode": "sell",
+              "base": 30
+            },
+            "elektronik": {
+              "mode": "buy",
+              "base": 90
+            },
+            "frugt": {
+              "mode": "buy",
+              "base": 75
+            },
+            "braendstof": {
+              "mode": "buy",
+              "base": 50
+            }
+          },
+          "upgrades": [
+            "repair",
+            "missile_defense"
+          ],
+          "rumors": [
+            "Arkæolog Ida: “Hele planeten er en ruin. Vi har kun lige kradset i overfladen.”",
+            "Tekniker Bo: “Signalet fra ruinerne gentager sig hvert 11. sekund. Altid.”"
+          ],
+          "decor": "crystal",
+          "flora": {
+            "tree": [
+              "d2e4ff",
+              "9fe2ff",
+              "ffffff"
+            ],
+            "band": [
+              4,
+              70
+            ],
+            "size": [
+              4,
+              14
+            ],
+            "width": 0.25,
+            "density": 0.05,
+            "rocks": 0.03,
+            "rock": [
+              "8a6bbf",
+              "a9bcff",
+              "ffffff"
+            ]
+          },
+          "noise_offset": [
+            5.5,
+            2.2,
+            8.8
+          ],
+          "outposts": [
+            {
+              "id": "obelisk_lab",
+              "name": "Udgravning 4",
+              "kind": "research",
+              "dist": 320,
+              "bearing": 150,
+              "pad_h": 16,
+              "title": "UDGRAVNING 4",
+              "sub": "Concord Videnskab · Architect-forskning",
+              "market": {
+                "krystal": {
+                  "mode": "buy",
+                  "base": 95
+                },
+                "elektronik": {
+                  "mode": "sell",
+                  "base": 64
+                }
+              },
+              "upgrades": [
+                "repair",
+                "thrusters"
+              ],
+              "rumors": [
+                "Vi fandt en dør. Den er ikke åbnet endnu."
+              ]
+            }
+          ],
+          "site_kinds": [
+            "ruin",
+            "ruin",
+            "vrag",
+            "ruin",
+            "forsyning",
+            "ruin",
+            "piratlejr",
+            "ruin",
+            "ruin"
+          ],
+          "features": [
+            {
+              "type": "cave",
+              "dist": 333,
+              "bearing": 60,
+              "heading": 0
+            },
+            {
+              "type": "cave",
+              "dist": 433,
+              "bearing": 210,
+              "heading": 90
+            }
+          ]
+        },
+        {
+          "id": "nadir",
+          "name": "Nadir",
+          "pos": [
+            -4800,
+            -640,
+            -4800
+          ],
+          "radius": 300,
+          "amp": 0.9,
+          "seed": 677,
+          "pad_h": 14,
+          "sky": "5a6a9a",
+          "atmo": "7a8ac0",
+          "cloud": "c0c8ff",
+          "buildings": [
+            "9fe2ff",
+            "ffd23f",
+            "e6ecff"
+          ],
+          "biome": [
+            [
+              -20,
+              "0a1838"
+            ],
+            [
+              0,
+              "2a4a8a"
+            ],
+            [
+              4,
+              "8a9ac8"
+            ],
+            [
+              30,
+              "c8d8ff"
+            ],
+            [
+              52,
+              "8a9ac8"
+            ],
+            [
+              70,
+              "5a6a9a"
+            ],
+            [
+              100000,
+              "ffffff"
+            ]
+          ],
+          "title": "NADIR · ISSTATIONEN",
+          "sub": "Ismåne · Nordforbundet",
+          "market": {
+            "braendstof": {
+              "mode": "sell",
+              "base": 22
+            },
+            "krystal": {
+              "mode": "buy",
+              "base": 60
+            },
+            "frugt": {
+              "mode": "buy",
+              "base": 66
+            }
+          },
+          "upgrades": [
+            "repair"
+          ],
+          "rumors": [
+            "Stationschef Rask: “Herfra kan man se Obelisk lyse om natten.”"
+          ],
+          "decor": "crystal",
+          "flora": {
+            "tree": [
+              "d2e4ff",
+              "9fe2ff",
+              "ffffff"
+            ],
+            "band": [
+              4,
+              70
+            ],
+            "size": [
+              4,
+              14
+            ],
+            "width": 0.25,
+            "density": 0.05,
+            "rocks": 0.03,
+            "rock": [
+              "8a6bbf",
+              "a9bcff",
+              "ffffff"
+            ]
+          },
+          "noise_offset": [
+            1.9,
+            4.4,
+            7.1
+          ],
+          "outposts": [],
+          "features": [
+            {
+              "type": "canyon",
+              "dist": 250,
+              "bearing": 90,
+              "heading": 0,
+              "length": 400,
+              "width": 52,
+              "depth": 54
+            },
+            {
+              "type": "cave",
+              "dist": 250,
+              "bearing": 250,
+              "heading": 45
+            }
+          ]
+        }
+      ],
+      "stations": [],
+      "lanes": [],
+      "gates": [
+        {
+          "id": "ekko_gate",
+          "pos": [
+            0,
+            0,
+            0
+          ],
+          "to": "frosta_gate_e",
+          "face": "obelisk",
+          "label": "JUMP GATE → FROSTA"
+        }
+      ],
+      "asteroids": [
+        {
+          "center": [
+            200,
+            40,
+            700
+          ],
+          "spread": [
+            380,
+            160,
+            340
+          ],
+          "count": 24,
+          "kind": "krystal",
+          "colors": [
+            "4dffe1",
+            "9fe2ff",
+            "c77dff"
+          ],
+          "seed": 43
+        }
+      ]
+    }
+  },
+  "upgrades": {
+    "repair": {
+      "name": "Reparer skrog",
+      "price_per_hull": 2
+    },
+    "cargo": {
+      "name": "Lastmodul +8",
+      "price": 200,
+      "cargo_bonus": 8,
+      "max_level": 2
+    },
+    "laser": {
+      "name": "Laser Mk II (dobbelt skade)",
+      "price": 150,
+      "max_level": 1
+    },
+    "shield": {
+      "name": "Skjold Mk II +25",
+      "price": 250,
+      "shield_bonus": 25,
+      "max_level": 1
+    },
+    "thrusters": {
+      "name": "Manøvredyser",
+      "price": 180,
+      "price_step": 120,
+      "max_level": 2,
+      "turn_bonus": 0.15,
+      "agility_bonus": 0.3,
+      "accel_bonus": 0.15,
+      "speed_bonus": 0.05
+    },
+    "missiles": {
+      "name": "Missiler (fyld op)",
+      "price_each": 15,
+      "consumable": true
+    },
+    "missile_defense": {
+      "name": "Missilforsvar",
+      "price": 260,
+      "max_level": 1
+    }
+  },
+  "combat": {
+    "bounty": 60,
+    "salvage_fee": 40,
+    "pirate_first_wave": 15,
+    "pirate_wave_interval": 30
+  }
+}
